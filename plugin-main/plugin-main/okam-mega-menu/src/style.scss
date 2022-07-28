@@ -1,0 +1,71 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+:root {
+	--li-padding-right: 1rem;
+	--li-padding-left: 0;
+	--li-padding-top: 0;
+	--li-padding-bottom: 0;
+}
+
+okam-navigation {
+	display: block;
+	opacity: 0;
+	transition: opacity 0.15s ease-in-out;
+}
+
+okam-navigation.hydrated {
+	opacity: 1;
+}
+
+.okam-navigation {
+
+	&__container {
+		display: flex;
+
+		&.sub-menu {
+			flex-direction: column;
+		}
+	}
+
+	.menu {
+		display: flex;
+		flex-direction: column;
+		position: fixed;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		height: 100%;
+		background: #fff;
+		z-index: 1;
+		margin: 0;
+
+		@media (min-width: 1024px) {
+			flex-direction: row;
+			position: relative;
+			background: none;
+		}
+	}
+}
+
+.okam-navigation-link {
+	position: relative;
+	padding-right: var(--li-padding-right);
+	padding-left: var(--li-padding-left);
+	padding-top: var(--li-padding-top);
+	padding-bottom: var(--li-padding-bottom);
+
+	&.has-child > .sub-menu {
+		position: absolute;
+		background-color: #fff;
+	}
+}
+
+.okam-navigation-extra-content {
+	margin-right: calc(-1 * var(--li-padding-right));
+}

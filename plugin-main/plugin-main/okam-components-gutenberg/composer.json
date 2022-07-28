@@ -1,0 +1,15 @@
+{
+    "name": "okam/okam-components-gutenberg",
+    "description": "Plugin Wordpress - Okam Components Gutenberg",
+    "version": "1.0.2",
+    "type": "wordpress-plugin",
+    "authors": [
+        {
+            "name": "Marie-Maxime Tanguay",
+            "email": "marie-maxime@okam.ca"
+        }
+    ],
+    "require": {
+        "composer/installers": "^1.9"
+    }
+}

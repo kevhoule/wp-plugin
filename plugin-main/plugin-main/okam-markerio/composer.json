@@ -1,0 +1,20 @@
+{
+    "name": "okam/okam-markerio",
+    "description": "Markerio Integration for Wordpress",
+    "type": "wordpress-plugin",
+    "license": "Okam License",
+    "authors": [
+        {
+            "name": "Yan Morin",
+            "email": "yan.morin@okam.ca"
+        },
+        {
+            "name": "Marie-Maxime Tanguay",
+            "email": "marie-maxime@okam.ca"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "composer/installers": "^1.9"
+    }
+}

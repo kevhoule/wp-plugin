@@ -1,0 +1,7 @@
+{
+    "useTabs": false,
+    "tabWidth": 2,
+    "singleQuote": true,
+    "traillingComma": "es5",
+    "bracketSpacing": true
+}
